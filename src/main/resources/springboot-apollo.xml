@@ -11,6 +11,7 @@
     <!--使用自定义namespace(多个namespace用逗号分开),如果出现不同的namespace,将按照order优先级进行选择-->
     <apollo:config namespaces="apolloBean" order="12"/>
 
+    <!--ApolloBean里面的值动态变化-->
     <bean id ="apolloBean" class="com.example.apollo.bean.ApolloBean">
         <property name="timeout" value="${timeout:11}"/>
         <property name="batch" value="${batch:12}"/>
