@@ -10,12 +10,13 @@ public class ApolloBean {
     private int batch;
 
     public void setTimeout(int timeout) {
-        System.out.println("old:" + this.timeout + "\tnew:" + timeout);
+        // 用于打印变化的值
+        System.out.println("timeout打印的old:" + this.timeout + "\tnew:" + timeout);
         this.timeout = timeout;
     }
 
     public void setBatch(int batch) {
-        System.out.println("old:" + this.batch + "\tnew:" + batch);
+        System.out.println("batch打印的old:" + this.batch + "\tnew:" + batch);
         this.batch = batch;
     }
 
